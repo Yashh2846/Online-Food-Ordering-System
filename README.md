@@ -1,13 +1,33 @@
 # Online Food Ordering System
 
-Java 17 + Spring Boot + MySQL REST API starter.
+Java 17 + Spring Boot + MySQL REST API project.
 
-The complete source project is provided in `online-food-ordering-spring-boot.zip`. Extract it and follow the included README for setup and API examples.
+## Status
+Initial repository setup is in progress. The repository currently contains the Maven build file, Spring Boot entry point, MySQL configuration, and this README. The complete application source has not yet been uploaded.
 
-Features in this starter: customer registration with BCrypt password hashing, food menu CRUD, dine-in/delivery order placement, server-side subtotal and 18% tax calculation, and order history.
+## Stack
+- Java 17
+- Spring Boot 3.5.6
+- Spring Data JPA
+- MySQL
+- Maven
 
-Stack: Java 17, Spring Boot 3.5.6, Spring Data JPA, MySQL, Maven.
+## Planned features
+- Customer registration with BCrypt password hashing
+- Food menu management
+- Dine-in and delivery order placement
+- Server-side subtotal and 18% tax calculation
+- Customer order history
 
-Security note: Authentication/authorization and admin roles are not implemented yet. Do not deploy publicly or use real customer data until those are added.
+## Run
+After the remaining source files are uploaded, configure MySQL credentials using the DB_URL, DB_USERNAME, and DB_PASSWORD environment variables, then run:
 
-Reference concept: https://github.com/subClassy/Fodder-OOM_Project. This is a separate implementation, not a fork.
+```bash
+mvn spring-boot:run
+```
+
+## Security
+Authentication/authorization and admin roles are not yet implemented. Do not deploy publicly or use real customer data until these protections are added.
+
+## Reference
+The feature concept was reviewed using the public Fodder project: https://github.com/subClassy/Fodder-OOM_Project. This repository is a separate implementation, not a fork.
